@@ -6,6 +6,6 @@ $on_discount= false;
 
 echo "Course title: {$course_name}
 Enrolled Students: {$enrolled_students}
-Course price: {$price} $ USD
+Course price: $price $ USD
 Course on discount:".($on_discount?"yes":"no");
 ?>
