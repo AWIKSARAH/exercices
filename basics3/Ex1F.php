@@ -1,15 +1,16 @@
 <?php
-$e1 = readline("Enter The first agjoining "); 
-$e2 = readline("Enter The second agjoining ");
-$di = readline("Enter The first diametre ");
+function sum_Digit($inp)
+{
+   
+    $num = 0;
+    
+    for ($i = 0; $i < strlen($inp); $i++) { 
+        $num = intval($inp[$i]) + $num;
+    }
+    
+    echo "The sum of the digits in {$inp} is {$num}.\n";
+ }
 
-if ($e1 == $e2 && $di**2== $e1**2 + $e2**2 ){
-    echo "It's Rectangle";
-}
-elseif ($e1 == $e2 && $e1 == sqrt(($di**2)/2)){
-    echo "is a rhombus ";
-}
-else {
-    echo "is neither a rhombus nor a rectangle";
-}
+ sum_Digit(readline("Enter a number \n"));
+
 ?>
